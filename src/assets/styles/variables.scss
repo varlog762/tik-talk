@@ -1,3 +1,5 @@
+@import './fonts.scss';
+
 // Colors:
 
 // Primary colors:
@@ -16,3 +18,7 @@ $green-color: #98e9ab;
 $green-light-color: rgba(152, 233, 171, 0.8);
 $grey-color: #5f646d;
 $grey-light-color: rgba(95, 100, 109, 0.85);
+
+// Fonts:
+
+$primary-fonts: 'JetBrains Mono', sans-serif;
