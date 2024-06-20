@@ -6,4 +6,8 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ProfileService {
   private http = inject(HttpClient);
+
+  getTestAccounts() {
+    return this.http.get('/account/test_accounts');
+  }
 }
