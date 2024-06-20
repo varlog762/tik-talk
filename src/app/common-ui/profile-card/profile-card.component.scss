@@ -1,0 +1,35 @@
+@import '../../../assets/styles/variables.scss';
+
+.profile-card {
+  border: 1px solid $light-color;
+  padding: 32px 24px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 32px;
+
+  &__container {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    grid-gap: 20px;
+  }
+
+  &__image {
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    overflow: hidden;
+  }
+
+  &__name {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+  }
+
+  &__description {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+  }
+}
