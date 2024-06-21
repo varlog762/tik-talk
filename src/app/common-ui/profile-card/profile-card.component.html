@@ -1,6 +1,7 @@
+@if (userProfileProps) {
 <div class="profile-card">
   <div class="profile-card__container">
-    <img [src]="userProfileProps.avatarUrl" alt="User image" class="profile-card__image">
+    <img [src]="userProfileProps.avatarUrl | imageUrlBuilder" alt="User image" class="profile-card__image">
     <div class="profile-card__name">
       <strong class="text-bold">{{userProfileProps.firstName + ' ' + userProfileProps.lastName}}</strong>
       <span class="text-thin">{{userProfileProps.username}}</span>
@@ -17,3 +18,4 @@
     <!-- <button class="btn"></button> -->
   </div>
 </div>
+}
