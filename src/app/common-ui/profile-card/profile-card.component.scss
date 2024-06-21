@@ -31,4 +31,10 @@
     font-size: 12px;
     line-height: 133%;
   }
+
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+  }
 }

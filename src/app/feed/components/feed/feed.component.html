@@ -1,0 +1,5 @@
+<div class="feed__container">
+  @for (userProfile of profiles$ | async; track userProfile.id) {
+  <tt-profile-card [userProfile]="userProfile"></tt-profile-card>
+  }
+</div>
