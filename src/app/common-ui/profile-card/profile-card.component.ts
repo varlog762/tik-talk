@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 
 import { UserProfileInterface } from '../../models/user-profile.interface';
-import { ImageUrlBuilderPipe } from '../../pipes/image-url-builder.pipe';
+import { ImageUrlBuilderPipe } from '../../helpers/pipes/image-url-builder.pipe';
 
 @Component({
   selector: 'tt-profile-card',
