@@ -3,8 +3,8 @@
   <div class="profile-card__container">
     <img [src]="userProfileProps.avatarUrl | imageUrlBuilder" alt="User image" class="profile-card__image">
     <div class="profile-card__name">
-      <strong class="text-bold">{{userProfileProps.firstName + ' ' + userProfileProps.lastName}}</strong>
-      <span class="text-thin">{{userProfileProps.username}}</span>
+      <strong class="h6">{{userProfileProps.firstName + ' ' + userProfileProps.lastName}}</strong>
+      <span class="subtitle">{{userProfileProps.username}}</span>
     </div>
   </div>
   <div class="profile-card__description">{{userProfileProps.description}}</div>

@@ -6,6 +6,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 32px;
+  background-color: $dark-color;
 
   &__container {
     display: grid;

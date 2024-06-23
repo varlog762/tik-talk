@@ -8,19 +8,27 @@
 }
 
 body {
-  background-color: $dark-color;
   color: $light-color;
   font-family: $primary-fonts;
+  background: $dark-color url('./assets/images/background.jpg') no-repeat center
+    center / 100% 100%;
 }
 
-.text-bold {
+.h1 {
+  font-family: $primary-fonts;
+  line-height: 117%;
+  font-size: 48px;
+  font-weight: 800;
+}
+
+.h6 {
   font-family: $primary-fonts;
   font-weight: 800;
   font-size: 18px;
   line-height: 133%;
 }
 
-.text-thin {
+.subtitle {
   font-family: $primary-fonts;
   font-weight: 400;
   font-size: 14px;

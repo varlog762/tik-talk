@@ -1,0 +1,47 @@
+@import '../../../assets/styles/variables.scss';
+@import '../../../assets/styles/fonts.scss';
+
+:host {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100dvh;
+  align-items: center;
+  margin: 0 10%;
+}
+
+.login-form-container {
+  width: 440px;
+}
+
+.login-title {
+  margin-bottom: 60px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+
+  &__label {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 133%;
+    margin-bottom: 8px;
+  }
+
+  &__input {
+    padding: 12px 20px;
+    margin-bottom: 16px;
+    border: 1px $light-color solid;
+    border-radius: 2px;
+    color: $light-color;
+    background-color: $dark-color;
+  }
+
+  &__btn {
+    margin-top: 32px;
+  }
+}
+
+.login-logo-container {
+  width: 440px;
+}
