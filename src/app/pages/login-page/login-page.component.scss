@@ -22,19 +22,11 @@
   flex-direction: column;
 
   &__label {
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 133%;
     margin-bottom: 8px;
   }
 
   &__input {
-    padding: 12px 20px;
     margin-bottom: 16px;
-    border: 1px $light-color solid;
-    border-radius: 2px;
-    color: $light-color;
-    background-color: $dark-color;
   }
 
   &__btn {

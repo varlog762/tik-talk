@@ -36,22 +36,43 @@ body {
 }
 
 .btn {
-  border: none;
   background-color: $primary-color;
   color: $dark-color;
-  border-radius: 2px;
+  border: 1px solid $dark-color;
+  border-radius: 4px;
   padding: 10px 20px;
   font-weight: 700;
   font-size: 14px;
   line-height: 24px;
+  cursor: pointer;
+
+  &:active {
+    box-shadow: 4px 4px 0 0 rgba(255, 255, 255, 0.25);
+  }
 }
 
 .skill-tag {
   display: inline;
   padding: 4px 8px;
-  box-sizing: border-box;
   border: 1px solid $light-color;
   border-radius: 4px;
   font-size: 12px;
   font-weight: 700;
+}
+
+.tt-control-label {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 133%;
+}
+
+.tt-input {
+  padding: 12px 20px;
+  border: 1px solid $light-color;
+  border-radius: 4px;
+  color: $light-color;
+  background-color: $dark-color;
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 21px;
 }
