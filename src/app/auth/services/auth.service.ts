@@ -11,7 +11,11 @@ import { LoginResponseInterface } from '../../models/login-response.intrerface';
 export class AuthService {
   http = inject(HttpClient);
 
-  login(payload: LoginRequestInterface): Observable<LoginResponseInterface> {
-    return this.http.post<LoginResponseInterface>('auth/token', payload);
+  login(loginInput: LoginRequestInterface): Observable<LoginResponseInterface> {
+    const formData = new FormData();
+    formData.append('username', loginInput.username);
+    formData.append('password', loginInput.password);
+
+    return this.http.post<LoginResponseInterface>('/auth/token', formData);
   }
 }
